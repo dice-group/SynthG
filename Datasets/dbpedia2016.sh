@@ -6,8 +6,6 @@
 
 wget http://downloads.dbpedia.org/2016-04/core-i18n/en/persondata_en.ttl.bz2
 wget http://downloads.dbpedia.org/2016-04/core-i18n/en/mappingbased_objects_en.ttl.bz2
-# wget http://downloads.dbpedia.org/2016-04/core-i18n/en/short_abstracts_en.ttl.bz2
-# wget http://downloads.dbpedia.org/2016-04/core-i18n/en/long_abstracts_en.ttl.bz2
 wget http://downloads.dbpedia.org/2016-04/core-i18n/en/infobox_properties_en.ttl.bz2
 wget http://downloads.dbpedia.org/2016-04/core-i18n/en/infobox_property_definitions_en.ttl.bz2
 wget http://downloads.dbpedia.org/2016-04/core-i18n/en/instance_types_en.ttl.bz2
@@ -88,9 +86,7 @@ serdi -i turtle  page_links_en.ttl -o ntriples >page_links_en.nt
 # ./revision_ids_en.ttl
 
 
-# grep -v -c '> .' instance_types_transitive_en.nt
-
-# grep -v "\"" testOhneL.nt>testOhneL_ResTrp.nt
+# remove triples with object as a Literal
 
 for fname in *.nt; do
         echo $fname;
