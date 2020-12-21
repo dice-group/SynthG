@@ -1,0 +1,27 @@
+Column description
+=========================
+group:group of files
+i: index of file in its group
+fname: file name
+nv: number of vertices
+ne: number of edges (i.e triples without literals)	
+avgDegree: average degree =ne/nv	
+sdie: standard deviation of input edges
+sdoe: standard deviation of output edges
+avgie: mean of input edges
+avgoe:mean of output edges
+maxie: maximum of input edges
+maxoe:max of output edges
+cntClstr: number of clusters
+vTriangles: number of vertix triangles
+eTriangles: number edge triangles
+pot_trngl:number of potential triangles
+clavg: average of vluster sizes
+ClCoef: global clustering coefficient
+cnt_class: number of classes
+cnt_prop: number of properties
+cnt_subj: number of unique subjects
+cnt_obj: number of unique objects
+cnt_obj_only:number of vertices that appeared as only as object
+max.cl.csize.: max cluster size
+tload,	ttime: time of loading and calculating stats
